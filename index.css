@@ -368,9 +368,7 @@ form .field input[type="submit"]:active {
     .about-txt{
         font-size: 15px;
     }
-    .card-text{
-        color: #1c1b1b;
-    }
+
 }
     
 
@@ -438,9 +436,7 @@ form .field input[type="submit"]:active {
     #btns{
         margin: 8%;
     }
-    .card-text{
-        color: #1c1b1b;
-    }
+
     #btns button{
         margin-right: 3%;
     }
@@ -496,9 +492,7 @@ form .field input[type="submit"]:active {
     #btns{
         margin: 8%;
     }
-    .card-text{
-        color: #1c1b1b;
-    }
+
     #btns button{
         margin-right: 3%;
     }
@@ -531,8 +525,6 @@ form .field input[type="submit"]:active {
     .education .val{
         font-size: 13px;
     }
-    .card-text{
-        color: #1c1b1b;
-    }
+
 }
 
