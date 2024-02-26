@@ -1,0 +1,511 @@
+body{
+    overflow-x:hidden
+}
+nav {
+    position: sticky;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    color: rgb(230, 192, 3);
+
+}
+
+nav ul {
+    float: left;
+    margin-right: 5%;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 20px;
+
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: #ffbd39;
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: 0.2s;
+
+
+}
+
+nav ul li a:hover {
+    color: #ffbd39;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.intro {
+    flex-basis: 45%
+}
+
+.image {
+    flex-basis: 55%
+}
+
+.top_title {
+    color: white;
+}
+
+.hero_title {
+    font-size: 4.5rem;
+    color: white;
+}
+
+.hero_desc {
+    font-size: 2rem;
+    color: white;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.imageAboutPage {
+    width: 100%;
+    height: 100%;
+}
+
+.servicesText.card {
+    background-color: #1c1b1b;
+    height: 280px;
+    cursor: pointer;
+    color: #ffbd39;
+}
+
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+    color: #ffbd39;
+}
+
+.card-title {
+    font-weight: 800;
+    text-align: center;
+    color: #ffbd39;
+
+}
+
+.card-text {
+    color: white;
+    font-size: 17px;
+}
+
+.card:hover {
+    background-color: #ffbd39;
+}
+
+.card:hover .card-title {
+    color: #323030;
+}
+
+.card:hover .card-text {
+    color: #323030;
+}
+
+.card:hover .servicesIcon {
+    color: #323030;
+}
+
+.servicesText:hover {
+    border: 1px solid white
+}
+
+.navbarScroll.navbarDark {
+    background-color: black;
+}
+
+.key {
+    color: #ffbd39;
+}
+
+.val {
+    color: white;
+}
+
+.hobbies ul li {
+    color: #ffbd39;
+    font-size: 25px;
+}
+
+
+
+.info {
+    margin: 15px;
+    font-family: sans-serif;
+}
+
+.contactf{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10%;
+}
+.box{
+    flex-basis: 50%;
+}
+.left-box1 {
+    border-color: white;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+.wrapper {
+    flex-basis: 45%;
+    max-width: 400px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    background: black;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(-135deg, #000000, #191919);
+}
+
+.wrapper .title {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    user-select: none;
+    font-family: sans-serif;
+    border-radius: 15px 15px 0 0;
+    background: linear-gradient(-135deg, #ffbd39, rgb(229, 176, 2));
+}
+
+.wrapper form {
+    padding: 10px 30px 50px 30px;
+}
+
+.wrapper form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.wrapper form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.wrapper form .field input:focus,
+form .field input:valid {
+    border-color: #ffbd39;
+}
+
+.wrapper form .field label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    color: black;
+    font-weight: 400;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+form .field input:focus~label,
+form .field input:valid~label {
+    top: 0%;
+    font-size: 16px;
+    color: black;
+    background: yellow;
+    transform: translateY(-50%);
+}
+
+form .field input[type="submit"] {
+    color: #191919;
+    font-weight: 250;
+    border: none;
+    padding-left: 0;
+    margin-top: -10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(-135deg, #ffbd39,rgb(229, 176, 2));
+    transition: all 0.3s ease;
+}
+ 
+form .field input[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+/*Footer*/
+
+.footer-nav-item a {
+	text-decoration: none;
+}
+.footer-nav-link,
+.footer-nav-item .content {
+	color: #a09d97;
+	font-size: 35px;
+	
+}
+
+.footer-nav-link:hover {
+	color: #ffbd39;
+}
+
+.footer-nav-item.flex {
+	display: flex;
+	
+}
+
+
+.footer-nav .social-link {
+	display: flex;
+	color: white;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+}
+.footer-nav .social-link li{
+	list-style: none;
+}
+
+.social-link .footer-nav-link {
+	font-size: 25px;
+	color: white;
+}
+#projects .card-title{
+    color: #ffbd39;
+}
+#projects .card-text{
+    color: white;
+    font-size: 18px;
+}
+
+#projects .card{
+    background-color: #191919;
+}
+.hobbies ul li{
+    justify-content: center;
+    list-style: none;
+}
+#fontaws{
+    display: none;
+}
+@media only screen and (max-width:990px) and (min-width: 150px){
+    nav ul{
+        background-color: #f7ad18;
+        position: fixed;
+        top:0;
+        left:0px;
+        width: 250px;
+        height: 100vh;
+        padding-top: 50px;
+        padding-left: 50px;
+        z-index: 1;
+    }
+    nav ul li a{
+        color: rgb(0, 0, 0);
+    }
+    nav ul li a:hover{
+        color: #191919;
+    }
+    nav ul li{
+        margin: 25px;
+        font-weight: 500;
+    }
+    #fontaws{
+        display: block;
+        font-size: 25px;
+        position: absolute;
+        top: 0px;
+        left: 200px;
+        margin: 20px;
+        transition: right 1s;
+    }
+    #fontaws:hover{
+        cursor: pointer;
+    }
+    .contactf{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+}
+
+
+@media only screen and (max-width:800px) and (min-width: 600px){
+    .about-txt{
+        font-size: 15px;
+    }
+}
+    
+
+
+@media only screen and (max-width:600px) and (min-width: 400px){
+    .hobbies ul li{
+        font-size: 20px;
+    }
+    .footer-nav-link{
+        font-size: 25px;
+    }
+    .followme{
+        font-size: 25px;
+    }
+
+    .top_title{
+        font-size: 20px;
+    }
+    .hero_title{
+        font-size: 32px;
+    }
+    .hero_desc{
+        font-size: 22px;
+    }
+    .home_buttons button a{
+        font-size: 20px;
+    }
+    #nav_name{
+        font-size: 30px;
+    }
+    .about-txt{
+        font-size: 13px;
+    }
+    .contactf{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .info{
+        font-size: 20px;
+    }
+    .left-box1{
+        max-width: 400px;
+    }
+    .wrapper{
+        margin-top: 2%;
+    }
+    .wrapper .title{
+        font-size: 30px;
+        line-height: 80px;
+    }
+    .wrapper form .field{
+        height: 40px;
+    }
+    .skills h4{
+        font-size: 18px;
+    }
+    .education .key{
+        font-size: 20px;
+    }
+    .education .val{
+        font-size: 16px;
+    }
+
+}
+@media only screen and (max-width:399px) and (min-width: 250px){
+    .hobbies ul li{
+        font-size: 15px;
+    }
+    .footer-nav-link{
+        font-size: 20px;
+    }
+    .followme{
+        font-size: 20px;
+    }
+    .top_title{
+        font-size: 16px;
+    }
+    .hero_title{
+        font-size: 26px;
+    }
+    .hero_desc{
+        font-size: 19px;
+    }
+    .home_buttons button a{
+        font-size: 16px;
+    }
+    .nav_name{
+        font-size: 20px;
+    }
+    .about-txt{
+        font-size: 10px;
+    }
+    .skills h4{
+        font-size: 15px;
+    }
+    .wrapper{
+        margin-top: 2%;
+    }
+    .wrapper .title{
+        font-size: 25px;
+        line-height: 80px;
+    }
+    .education .key{
+        font-size: 17px;
+    }
+    .education .val{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:249px) and (min-width: 150px){
+    .footer-nav-link{
+        font-size: 17px;
+    }
+    .followme{
+        font-size: 17px;
+    }
+    .top_title{
+        font-size: 15px;
+    }
+    .hero_title{
+        font-size: 20px;
+    }
+    .hero_desc{
+        font-size: 16px;
+    }
+    .home_buttons button a{
+        font-size: 12px;
+    }
+    .about-txt{
+        font-size: 8px;
+    }
+    .education .key{
+        font-size: 15px;
+    }
+    .education .val{
+        font-size: 13px;
+    }
+}
+
