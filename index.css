@@ -440,6 +440,9 @@ form .field input[type="submit"]:active {
     #btns button{
         margin-right: 3%;
     }
+    .card-text{
+	    color:white;
+    }
 
 }
 @media only screen and (max-width:399px) and (min-width: 250px){
@@ -490,11 +493,13 @@ form .field input[type="submit"]:active {
         font-size: 11px;
     }
     #btns{
-        margin: 8%;
+        margin: 6%;
     }
-
+    .card-text{
+	    color:white;
+    }
     #btns button{
-        margin-right: 3%;
+        margin-right: 2%;
     }
 }
 @media only screen and (max-width:249px) and (min-width: 150px){
@@ -524,6 +529,15 @@ form .field input[type="submit"]:active {
     }
     .education .val{
         font-size: 13px;
+    }
+     #btns{
+        margin: 6%;
+    }
+    .card-text{
+	    color:white;
+    }
+    #btns button{
+        margin-right: 2%;
     }
 
 }
