@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body style="background-color: black;" text="yellow">
+  <nav class="navbar navbar-expand-lg" style="margin-top:1%; display:flex">
+
+    <div class="nav_name" style="flex-basis: 40%; text-align: center;">
+      <h2
+        style="margin:auto; font-size: 35px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"
+        id="nav_name">
+        <b>
+          <font class="nave_name">HARSH</font>
+        </b>
+      </h2>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" onclick="openmenu()"></span>
+    </button>
+    <div class="nav_links collapse navbar-collapse" id="navbarSupportedContent" style="flex-basis: 60%;">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbarr">
+        <li class="nav-item"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#works">Resume</a></li>
+        <li class="nav-item"><a href="#services">Services</a></li>
+        <li class="nav-item"><a href="#about">Skills</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-x" id="fontaws" style="color: white;" onclick="closemenu()"></i>
+      </ul>
+
+    </div>
+  </nav>
+
+  <section class="home" style="display: flex; justify-content: space-between; margin-top: 4%;">
+    <div class="intro" style="margin: 5%;">
+      <h2 class="top_title">Hello,</h2>
+      <h2 class="hero_title"><b>I'm <font color="#ffbd39">Harsh Nahata</font></b></h2>
+      <p class="hero_desc">I am a professional Coder and Tech Enthusiast.</p>
+      <div class="home_buttons">
+        <button type="button" class="btn btn-outline-warning "
+          style="font-size: 20px; border-radius: 30px; padding: 10px 20px; width: 100%;"><a href="Resume_Harsh Nahata.pdf" download
+            style="text-decoration: none;" ><b>Resume</b></a></button>
+      </div>
+    </div>
+    
+    <div class="image">
+      <img src="Harsh Nahata.jpg" class="img-fluid" style="border: 2px solid #ffbd39; border-radius: 3000px; margin-right: 2%; max-width: 90%; max-height: 100%;">
+    </div>
+
+
+  </section>
+  
+  <section id="about">
+    <div class="container mt-4 pt-4">
+      <h1 class="text-center" style="color: #ffbd39; font-size: 40px;"><b>About Me</b></h1>
+      <div class="row mt-4">
+        <div class="col-lg-4">
+          <img src="about.jpg" class="imageAboutPage">
+        </div>
+
+        <div class="col-lg-8">
+          <div class="row mt-3">
+            <p style="color: white; font-size: 19px;"> Hey there, I'm Harsh Nahata. I am a First-year undergraduate at
+              IIT Kharagpur, a 19-year-old engineering enthusiast on a quest for knowledge and innovation. Currently,
+              I'm immersing myself in the world of coding and technology.
+              For me, engineering isn't just a field of study—it's a passion.<br><br>
+              At IIT Kharagpur, I'm not just learning the ropes—I'm diving deep into the vast ocean of possibilities,
+              eager to soak up every bit of knowledge and experience. But I'm not stopping there. I'm constantly seeking
+              out new skills and pushing the boundaries of what I thought was possible.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+    </div>
+    
+      <span style="margin: 9%;">
+        <button type="button" class="btn btn-outline-warning  col-2 my-2 "
+          style="font-size: 24px; border-radius: 25px; border-width: 0 0 2px 0px; color: white; margin-right: 5%;"
+          onclick="func('education','acad')" id="acad"><b>
+            <font class="about-txt">Academic</font>
+          </b></button>
+        <button type="button" class="btn btn-outline-warning col-2  my-2 "
+          style="font-size: 24px; border-radius: 25px; border-width: 0 0 2px 0px; color: white; margin-right: 5%;"
+          onclick="func('hobbies','hobby')" id="hobby"><b>
+            <font class="about-txt">Hobbies</font>
+          </b></button>
+        <button type="button" class="btn btn-outline-warning col-2  my-2 "
+          style="font-size: 24px; border-radius: 25px; border-width: 0 0 2px 0px; color: white; margin-right: 5%;"
+          onclick="func('skills','skll')" id="skll"><b>
+            <font class="about-txt">Skills</font>
+          </b></button>
+        <button type="button" class="btn btn-outline-warning col-2  my-2 "
+          style="font-size: 24px; border-radius: 25px; border-width: 0 0 2px 0px; color: white; margin-right: 5%;"
+          onclick="func('certificates','certificates')" id="certificates"><b>
+            <font class="about-txt">License</font>
+          </b></button>
+
+      </span>
+
+      <br>
+    <div style="margin: 0% 10%;">
+      <div class="education row my-2">
+        <div class="education-school col-5" style="margin-left: 1%;">
+          <h3>
+            <font class="key">School</font> : <font class="val">Birla High School</font>
+          </h3>
+          <h4>
+            <font class="key">Class</font>: <font class="val">10</font>
+            </h3>
+            <h4>
+              <font class="key">Boards Marks</font>: <font class="val">92.4%</font>
+            </h4>
+            <br>
+            <h4>
+              <font class="key">Class </font>: <font class="val">12</font>
+              </h3>
+              <h4>
+                <font class="key">Boards Marks % </font> : <font class="val"> 94.0%</font>
+              </h4>
+
+        </div>
+        <div class="education-clg col-6">
+          <h3>
+            <font class="key">College</font> : <font class="val">IIT Kharagpur</font>
+          </h3>
+          <h4>
+            <font class="key">Department </font>: <font class="val">Bioscience and Biotechnology</font>
+          </h4>
+          <h4>
+            <font class="key">Course </font>: <font class="val">B.Tech Biotechnology & Biochemical Engineering</font>
+          </h4>
+          <h4>
+            <font class="key">CGPA </font>: <font class="val">8.83</font>
+          </h4>
+        </div>
+      </div>
+
+      <div class="hobbies" style="display: none;">
+        <ul>
+          <li>Cricket</li>
+          <li>Squash</li>
+          <li>Gaming</li>
+          <li>Coding</li>
+        </ul>
+      </div>
+      <div class="skills row my-2" style="color: #ffbd39; display: none;">
+        <center>
+          <h2><b>My Skills</b></h2>
+        </center>
+        <div class="col-6 my-2">
+          <h4>Web Development</h4>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-orange w3-round-xlarge" style="width:70%">&nbsp;</div>
+          </div>
+        </div>
+        <div class="col-6 my-2">
+          <h4>Software Development</h4>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-orange w3-round-xlarge" style="width:15%">&nbsp;</div>
+          </div>
+        </div>
+        <div class="col-6 my-2">
+          <h4>DSA with C/C++</h4>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-orange w3-round-xlarge" style="width:15%">&nbsp;</div>
+          </div>
+        </div>
+        <div class="col-6 my-2">
+          <h4>Python Programming Language</h4>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-orange w3-round-xlarge" style="width:60%">&nbsp;</div>
+          </div>
+        </div>
+        <div class="col-6 my-2">
+          <h4>Backend Services</h4>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-orange w3-round-xlarge" style="width:60%">&nbsp;</div>
+          </div>
+        </div>
+        <div class="col-6 my-2">
+          <h4>MongoDb</h4>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-container w3-orange w3-round-xlarge" style="width:50%">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="certificates row my-2" style="display: none;">
+        <center>
+          <h2 style="color: #ffbd39;" class="my-2"> <b>My Certificates</b></h2>
+        </center>
+        <div class="col-6 my-2">
+          <div class="card">
+            <img src="c1.png" class="card-img-top img-fluid" height="400px" style="max-height: 20%;">
+            <div class="card-body">
+              <h4 class="card-title">AWS SageMaker</h4>
+              <h5 class="card-text">Introduction Machine Learning using Aws.</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 my-2">
+          <div class="card">
+            <img src="c2.png" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Silver Zone Olympiad</h4>
+              <h5 class="card-text">International Informatics Olympiad </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 my-2">
+          <div class="card">
+            <img src="c3.png" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Vidyarthi Vigyan Manthan</h4>
+              <h5 class="card-text">Participated in VVM.</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 my-2">
+          <div class="card">
+            <img src="c4.png" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">AI Tools</h4>
+              <h5 class="card-text">Attended the workshop on AI Tools. </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h1 class="text-center" style="color: #ffbd39; margin: 4%;"><b>Services</b></h1>
+      <div class="row">
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class="fas servicesIcon fa-clock"></i>
+              <h4 class="card-title mt-3">Website Development</h4>
+              <p class="card-text mt-3">Expert web development services tailored to your needs. 
+                
+                Crafting dynamic, user-friendly websites for your digital success.
+                Browse through my projects
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class='fas servicesIcon fa-layer-group'></i>
+              <h4 class="card-title mt-3">Game Development</h4>
+              <p class="card-text mt-3">Offering Python Turtle and Pygame expertise for captivating game development. 
+                
+                Transforming concepts into immersive gaming experiences with precision and flair.
+              </p>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class='far servicesIcon fa-check-circle'></i>
+              <h4 class="card-title mt-3">Consulting </h4>
+              <p class="card-text mt-3">Specialized consulting solutions designed to optimize your business strategy. 
+                
+                Strategic guidance for sustainable growth and competitive advantage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class='fas servicesIcon fa-search'></i>
+              <h4 class="card-title mt-3">Data Analysis</h4>
+              <p class="card-text mt-3">Harnessing the power of Python modules for insightful data analysis. 
+                
+                From pandas to NumPy, delivering comprehensive solutions tailored to your analytical needs.
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 mt-4">
+          <div class="card servicesText">
+            <div class="card-body">
+              <i class='fas servicesIcon fa-wrench'></i>
+              <h4 class="card-title mt-3">QA</h4>
+              <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the
+                card's content.<br>
+                
+                Coming Soon, till the time Stay Tuned.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+  <section id="projects" style="margin-top: 4%;">
+    <div class="container mt-3">
+      <h1 class="text-center" style="color: #ffbd39;"><b>Projects</b></h1>
+      <div class="row">
+        <div class="col-lg-4 mt-4">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="amazon_clone.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Amazon Clone</h4>
+              <p class="card-text">Fully Functional clone of Amazone website. </p>
+              <div class="text-center">
+                <a href="#" class="btn btn-outline-warning" style="width: 100%;"><b>Link</b></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="card portfolioContent">
+            <img class="card-img-top img-fluid" src="news.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">News Website</h4>
+              <p class="card-text">Simple Implementation of news website using news API.</p>
+              <div class="text-center">
+                <a href="https://github.com/Harsh070611/News-Website" class="btn btn-outline-warning"
+                  style="width: 100%;"><b>Link</b></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="card portfolioContent">
+            <img class="card-img-top img-fluid" src="bank.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Bank Management System</h4>
+              <p class="card-text">Simple Implementation of Bank System and some functionalities.</p>
+              <div class="text-center">
+                <a href="https://github.com/Harsh070611/Bank-Management-System" class="btn btn-outline-warning"
+                  style="width: 100%;"><b>Link</b></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-lg-4 mt-4">
+          <div class="card portfolioContent">
+            <img class="card-img-top img-fluid" src="tic_tac_toe.jpg" alt="Card image" style="width:100%; height: 300px;">
+            <div class="card-body">
+              <h4 class="card-title">Tic Tac Toe Game</h4>
+              <p class="card-text">Tic Tac Toe Game, very cool design, fun to play.</p>
+              <div class="text-center">
+                <a href="https://github.com/Harsh070611/Tic-Tac-Toe" class="btn btn-outline-warning"
+                  style="width: 100%;"><b>Link</b></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4">
+          <div class="card portfolioContent">
+            <img class="card-img-top" src="dino.png" alt="Card image" style="width:100%; height: 300px;">
+            <div class="card-body">
+              <h4 class="card-title">Dino Jump Game</h4>
+              <p class="card-text">Dino Jump Game using python turtle module, fun to play.</p>
+              <div class="text-center">
+                <a href="https://github.com/Harsh070611/Dino-Jump" class="btn btn-outline-warning"
+                  style="width: 100%;"><b>Link</b></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 mt-4">
+          <div class="card portfolioContent">
+            <img class="card-img-top" src="paint.jpg" alt="Card image" style="width:100%; height: 300px;">
+            <div class="card-body">
+              <h4 class="card-title">Paint App</h4>
+              <p class="card-text">Simple Implementation of Paint App, Paint and Enjoy</p>
+              <div class="text-center">
+                <a href="https://harsh070611.github.io/Paint-App/" class="btn btn-outline-warning"
+                  style="width: 100%;"><b>Link</b></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="margin-top: 4%;">
+    <h1 class="text-center" style="color:#ffbd39"><b>Contact</b></h1><br>
+    <div class="contactf">
+      <div class="box">
+        <div class="left-box1">
+          <i class="fas fa-map-marker-alt" style="color: #ffbd39;"></i>
+          <h2 class="info">Address</h2>
+          <h4 class="info">IIT Kharagpur, LBS Hall
+          </h4>
+          <h4 class="info">Kharagpur - 721302</h4>
+        </div>
+        <div class="left-box1">
+          <i class="fas fa-phone-alt" style="color: #ffbd39;"></i></i>
+          <h2 class="info">Phone</h2>
+          <h4 class="info">8100473988
+          </h4>
+        </div>
+
+
+        <div class="left-box1">
+          <i class="fas fa-envelope" style="color: #ffbd39;"></i></i>
+          <h2 class="info">Email</h2>
+          <h4 class="info">harshnahata07@gmail.com
+          </h4>
+        </div>
+      </div>
+      <br><br><br>
+
+      <div class="wrapper">
+        <div class="title">
+          Contact Us
+        </div>
+        <form method="POST">
+          <div class="field">
+            <input type="text" required name="name">
+            <label>First Name</label>
+          </div>
+          <div class="field">
+            <input type="text" required name="email">
+            <label>Email_id</label>
+          </div>
+          <div class="field">
+            <input type="text" required name="mobile">
+            <label>Mobile No.</label>
+          </div>
+          <br><br>
+          <div class="field">
+            <input type="submit" value="Submit">
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="my-2">
+    <div class="row text-center" style="margin-left: auto; background-color: #1c1b1b;">
+      <h3 style="color: #ffbd39; margin-right: auto;" class="col-2 followme my-1"><b>Follow Me</b></h3>
+      <div class="facebook col-2">
+        <a href="https://www.facebook.com/profile.php?id=100093927674387&mibextid=ZbWKwL" class="footer-nav-link">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </div>
+
+      <div class="twitter col-2 ">
+        <a href="https://x.com/itsHarshN07?t=6rFDR-I0QYR1UkUmeyZrOg&s=09" class="footer-nav-link">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </div>
+
+      <div class="linkedin col-2 ">
+        <a href="www.linkedin.com/in/harsh-nahata-34b589289" class="footer-nav-link">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+
+      <div class="instagram col-2 mx-1">
+        <a href="https://www.instagram.com/imharshn_07?igsh=M2NsdnljeHE1Z2Mw" class="footer-nav-link">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://kit.fontawesome.com/4687ff8730.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
