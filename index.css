@@ -522,7 +522,7 @@ form .field input[type="submit"]:active {
         font-size: 12px;
     }
     .about-txt{
-        font-size: 8px;
+        font-size: 7px;
     }
     .education .key{
         font-size: 15px;
@@ -531,13 +531,13 @@ form .field input[type="submit"]:active {
         font-size: 13px;
     }
      #btns{
-        margin: 6%;
+        margin: 4%;
     }
     .card-text{
 	    color:white;
     }
     #btns button{
-        margin-right: 2%;
+        margin-right: 1%;
     }
 
 }
